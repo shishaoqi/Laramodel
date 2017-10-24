@@ -28,7 +28,7 @@ class Config
     }
 
     /**
-     * @param \shishao\laramodelMeta\Blueprint $blueprint
+     * @param \shishao\laramodel\Meta\Blueprint $blueprint
      * @param string $key
      * @param mixed $default
      *
