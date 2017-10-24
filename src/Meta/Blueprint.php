@@ -235,7 +235,7 @@ class Blueprint
     }
 
     /**
-     * @param \shishao\laramodelMeta\Blueprint $table
+     * @param \shishao\laramodel\Meta\Blueprint $table
      *
      * @return array
      */

@@ -3,7 +3,7 @@ y<?php
 namespace shishao\laramodel\Meta\MySql;
 
 use Illuminate\Support\Arr;
-use shishao\laramodelMeta\Blueprint;
+use shishao\laramodel\Meta\Blueprint;
 use Illuminate\Support\Fluent;
 use Illuminate\Database\Connection;
 
@@ -29,7 +29,7 @@ class Schema implements \shishao\laramodel\Meta\Schema
     protected $loaded = false;
 
     /**
-     * @var \shishao\laramodelMeta\Blueprint[]
+     * @var \shishao\laramodel\Meta\Blueprint[]
      */
     protected $tables = [];
 
@@ -84,7 +84,7 @@ class Schema implements \shishao\laramodel\Meta\Schema
     }
 
     /**
-     * @param \shishao\laramodelMeta\Blueprint $blueprint
+     * @param \shishao\laramodel\Meta\Blueprint $blueprint
      */
     protected function fillColumns(Blueprint $blueprint)
     {
@@ -107,7 +107,7 @@ class Schema implements \shishao\laramodel\Meta\Schema
     }
 
     /**
-     * @param \shishao\laramodelMeta\Blueprint $blueprint
+     * @param \shishao\laramodel\Meta\Blueprint $blueprint
      */
     protected function fillConstraints(Blueprint $blueprint)
     {
@@ -135,7 +135,7 @@ class Schema implements \shishao\laramodel\Meta\Schema
 
     /**
      * @param string $sql
-     * @param \shishao\laramodelMeta\Blueprint $blueprint
+     * @param \shishao\laramodel\Meta\Blueprint $blueprint
      * @todo: Support named primary keys
      */
     protected function fillPrimaryKey($sql, Blueprint $blueprint)
@@ -156,7 +156,7 @@ class Schema implements \shishao\laramodel\Meta\Schema
 
     /**
      * @param string $sql
-     * @param \shishao\laramodelMeta\Blueprint $blueprint
+     * @param \shishao\laramodel\Meta\Blueprint $blueprint
      */
     protected function fillIndexes($sql, Blueprint $blueprint)
     {
@@ -177,7 +177,7 @@ class Schema implements \shishao\laramodel\Meta\Schema
 
     /**
      * @param string $sql
-     * @param \shishao\laramodelMeta\Blueprint $blueprint
+     * @param \shishao\laramodel\Meta\Blueprint $blueprint
      * @todo: Support named foreign keys
      */
     protected function fillRelations($sql, Blueprint $blueprint)
@@ -228,7 +228,7 @@ class Schema implements \shishao\laramodel\Meta\Schema
 
     /**
      * @param string $table
-     * @param \shishao\laramodelMeta\Blueprint $blueprint
+     * @param \shishao\laramodel\Meta\Blueprint $blueprint
      *
      * @return array
      */
@@ -285,7 +285,7 @@ class Schema implements \shishao\laramodel\Meta\Schema
     }
 
     /**
-     * @return \shishao\laramodelMeta\Blueprint[]
+     * @return \shishao\laramodel\Meta\Blueprint[]
      */
     public function tables()
     {
@@ -295,7 +295,7 @@ class Schema implements \shishao\laramodel\Meta\Schema
     /**
      * @param string $table
      *
-     * @return \shishao\laramodelMeta\Blueprint
+     * @return \shishao\laramodel\Meta\Blueprint
      */
     public function table($table)
     {
@@ -315,7 +315,7 @@ class Schema implements \shishao\laramodel\Meta\Schema
     }
 
     /**
-     * @param \shishao\laramodelMeta\Blueprint $table
+     * @param \shishao\laramodel\Meta\Blueprint $table
      *
      * @return array
      */

@@ -9,9 +9,9 @@ namespace shishao\laramodel\Model;
 
 use Carbon\Carbon;
 use Illuminate\Support\Str;
-use shishao\laramodelMeta\Blueprint;
-use shishao\laramodelSupport\Classify;
-use shishao\laramodelMeta\SchemaManager;
+use shishao\laramodel\Meta\Blueprint;
+use shishao\laramodel\Support\Classify;
+use shishao\laramodel\Meta\SchemaManager;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Database\DatabaseManager;
 
@@ -23,7 +23,7 @@ class ModelFactory
     private $db;
 
     /**
-     * @var \shishao\laramodelMeta\SchemaManager
+     * @var \shishao\laramodel\Meta\SchemaManager
      */
     protected $schemas;
 
@@ -33,7 +33,7 @@ class ModelFactory
     protected $files;
 
     /**
-     * @var \shishao\laramodelSupport\Classify
+     * @var \shishao\laramodel\Support\Classify
      */
     protected $class;
 
@@ -57,7 +57,7 @@ class ModelFactory
      *
      * @param \Illuminate\Database\DatabaseManager $db
      * @param \Illuminate\Filesystem\Filesystem $files
-     * @param \shishao\laramodelSupport\Classify $writer
+     * @param \shishao\laramodel\Support\Classify $writer
      * @param \shishao\laramodel\Model\Config $config
      */
     public function __construct(DatabaseManager $db, Filesystem $files, Classify $writer, Config $config)
@@ -121,7 +121,7 @@ class ModelFactory
     }
 
     /**
-     * @param \shishao\laramodelMeta\Blueprint $blueprint
+     * @param \shishao\laramodel\Meta\Blueprint $blueprint
      *
      * @return bool
      */
@@ -170,7 +170,7 @@ class ModelFactory
     /**
      * @param string $schema
      *
-     * @return \shishao\laramodelMeta\Schema
+     * @return \shishao\laramodel\Meta\Schema
      */
     public function makeSchema($schema)
     {
@@ -442,7 +442,7 @@ class ModelFactory
     }
 
     /**
-     * @param \shishao\laramodelMeta\Blueprint|null $blueprint
+     * @param \shishao\laramodel\Meta\Blueprint|null $blueprint
      * @param string $key
      * @param mixed $default
      *

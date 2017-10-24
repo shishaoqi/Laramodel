@@ -29,7 +29,7 @@ class SchemaManager implements IteratorAggregate
     private $connection;
 
     /**
-     * @var \shishao\laramodelMeta\Schema[]
+     * @var \shishao\laramodel\Meta\Schema[]
      */
     protected $schemas = [];
 
@@ -63,7 +63,7 @@ class SchemaManager implements IteratorAggregate
     /**
      * @param string $schema
      *
-     * @return \shishao\laramodelMeta\Schema
+     * @return \shishao\laramodel\Meta\Schema
      */
     public function make($schema)
     {
@@ -77,7 +77,7 @@ class SchemaManager implements IteratorAggregate
     /**
      * @param string $schema
      *
-     * @return \shishao\laramodelMeta\Schema
+     * @return \shishao\laramodel\Meta\Schema
      */
     protected function makeMapper($schema)
     {

@@ -8,7 +8,7 @@
 namespace shishao\laramodel\Model;
 
 use Illuminate\Support\Arr;
-use shishao\laramodelMeta\Blueprint;
+use shishao\laramodel\Meta\Blueprint;
 
 class Config
 {

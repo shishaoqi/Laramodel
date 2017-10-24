@@ -24,7 +24,7 @@ interface Schema
     public function schema();
 
     /**
-     * @return \shishao\laramodelMeta\Blueprint[]
+     * @return \shishao\laramodel\Meta\Blueprint[]
      */
     public function tables();
 
@@ -38,12 +38,12 @@ interface Schema
     /**
      * @param string $table
      *
-     * @return \shishao\laramodelMeta\Blueprint
+     * @return \shishao\laramodel\Meta\Blueprint
      */
     public function table($table);
 
     /**
-     * @param \shishao\laramodelMeta\Blueprint $table
+     * @param \shishao\laramodel\Meta\Blueprint $table
      *
      * @return array
      */
