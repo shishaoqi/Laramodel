@@ -24,8 +24,8 @@ class ModelsServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'../../config/models.php' => config_path('models.php'),
-            ], 'reliese-models');
+                __DIR__.'/config/models.php' => config_path('create-models.php'),
+            ], 'shishao-models');
         }
     }
 
