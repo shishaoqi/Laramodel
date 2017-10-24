@@ -156,11 +156,11 @@ class Model
      * ModelClass constructor.
      *
      * @param shishao\laramodel\MetaBlueprint $blueprint
-     * @param \shishao\laramodel\Model\Factory $factory
+     * @param \shishao\laramodel\Model\ModelFactory $factory
      * @param \shishao\laramodel\Model\Mutator[] $mutators
      * @param bool $loadRelations
      */
-    public function __construct(Blueprint $blueprint, Factory $factory, $mutators = [], $loadRelations = true)
+    public function __construct(Blueprint $blueprint, ModelFactory $factory, $mutators = [], $loadRelations = true)
     {
         $this->blueprint = $blueprint;
         $this->factory = $factory;
