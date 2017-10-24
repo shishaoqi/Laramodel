@@ -68,8 +68,8 @@ return [
         */
 
         'use' => [
-            // shishao\LaramodelDatabase\Eloquent\BitBooleans::class,
-            // shishao\LaramodelDatabase\Eloquent\BlamableBehavior::class,
+            // shishao\laramodelDatabase\Eloquent\BitBooleans::class,
+            // shishao\laramodelDatabase\Eloquent\BlamableBehavior::class,
         ],
 
         /*
@@ -284,7 +284,7 @@ return [
     //     'snake_attributes' => false,
     //     'qualified_tables' => true,
     //     'use' => [
-    //         shishao\LaramodelDatabase\Eloquent\BitBooleans::class,
+    //         shishao\laramodelDatabase\Eloquent\BitBooleans::class,
     //     ],
     //     'except' => ['migrations'],
     //      // Table Specifics Bellow:

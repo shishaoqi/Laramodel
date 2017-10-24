@@ -1,9 +1,9 @@
 y<?php
 
-namespace shishao\Laramodel\Meta\MySql;
+namespace shishao\laramodel\Meta\MySql;
 
 use Illuminate\Support\Arr;
-use shishao\LaramodelMeta\Blueprint;
+use shishao\laramodelMeta\Blueprint;
 use Illuminate\Support\Fluent;
 use Illuminate\Database\Connection;
 
@@ -11,7 +11,7 @@ use Illuminate\Database\Connection;
  * Created by Cristian.
  * Date: 18/09/16 06:50 PM.
  */
-class Schema implements \shishao\Laramodel\Meta\Schema
+class Schema implements \shishao\laramodel\Meta\Schema
 {
     /**
      * @var string
@@ -29,7 +29,7 @@ class Schema implements \shishao\Laramodel\Meta\Schema
     protected $loaded = false;
 
     /**
-     * @var \shishao\LaramodelMeta\Blueprint[]
+     * @var \shishao\laramodelMeta\Blueprint[]
      */
     protected $tables = [];
 
@@ -84,7 +84,7 @@ class Schema implements \shishao\Laramodel\Meta\Schema
     }
 
     /**
-     * @param \shishao\LaramodelMeta\Blueprint $blueprint
+     * @param \shishao\laramodelMeta\Blueprint $blueprint
      */
     protected function fillColumns(Blueprint $blueprint)
     {
@@ -107,7 +107,7 @@ class Schema implements \shishao\Laramodel\Meta\Schema
     }
 
     /**
-     * @param \shishao\LaramodelMeta\Blueprint $blueprint
+     * @param \shishao\laramodelMeta\Blueprint $blueprint
      */
     protected function fillConstraints(Blueprint $blueprint)
     {
@@ -135,7 +135,7 @@ class Schema implements \shishao\Laramodel\Meta\Schema
 
     /**
      * @param string $sql
-     * @param \shishao\LaramodelMeta\Blueprint $blueprint
+     * @param \shishao\laramodelMeta\Blueprint $blueprint
      * @todo: Support named primary keys
      */
     protected function fillPrimaryKey($sql, Blueprint $blueprint)
@@ -156,7 +156,7 @@ class Schema implements \shishao\Laramodel\Meta\Schema
 
     /**
      * @param string $sql
-     * @param \shishao\LaramodelMeta\Blueprint $blueprint
+     * @param \shishao\laramodelMeta\Blueprint $blueprint
      */
     protected function fillIndexes($sql, Blueprint $blueprint)
     {
@@ -177,7 +177,7 @@ class Schema implements \shishao\Laramodel\Meta\Schema
 
     /**
      * @param string $sql
-     * @param \shishao\LaramodelMeta\Blueprint $blueprint
+     * @param \shishao\laramodelMeta\Blueprint $blueprint
      * @todo: Support named foreign keys
      */
     protected function fillRelations($sql, Blueprint $blueprint)
@@ -228,7 +228,7 @@ class Schema implements \shishao\Laramodel\Meta\Schema
 
     /**
      * @param string $table
-     * @param \shishao\LaramodelMeta\Blueprint $blueprint
+     * @param \shishao\laramodelMeta\Blueprint $blueprint
      *
      * @return array
      */
@@ -285,7 +285,7 @@ class Schema implements \shishao\Laramodel\Meta\Schema
     }
 
     /**
-     * @return \shishao\LaramodelMeta\Blueprint[]
+     * @return \shishao\laramodelMeta\Blueprint[]
      */
     public function tables()
     {
@@ -295,7 +295,7 @@ class Schema implements \shishao\Laramodel\Meta\Schema
     /**
      * @param string $table
      *
-     * @return \shishao\LaramodelMeta\Blueprint
+     * @return \shishao\laramodelMeta\Blueprint
      */
     public function table($table)
     {
@@ -315,7 +315,7 @@ class Schema implements \shishao\Laramodel\Meta\Schema
     }
 
     /**
-     * @param \shishao\LaramodelMeta\Blueprint $table
+     * @param \shishao\laramodelMeta\Blueprint $table
      *
      * @return array
      */

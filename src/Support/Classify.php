@@ -5,7 +5,7 @@
  * Date: 05/09/16 11:27 PM.
  */
 
-namespace shishao\Laramodel\Support;
+namespace shishao\laramodel\Support;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;

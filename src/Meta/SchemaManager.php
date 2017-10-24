@@ -5,14 +5,14 @@
  * Date: 02/10/16 07:37 PM.
  */
 
-namespace shishao\Laramodel\Meta;
+namespace shishao\laramodel\Meta;
 
 use ArrayIterator;
 use RuntimeException;
 use IteratorAggregate;
 use Illuminate\Database\MySqlConnection;
 use Illuminate\Database\ConnectionInterface;
-use shishao\Laramodel\Meta\MySql\Schema as MySqlSchema;
+use shishao\laramodel\Meta\MySql\Schema as MySqlSchema;
 
 class SchemaManager implements IteratorAggregate
 {
@@ -29,7 +29,7 @@ class SchemaManager implements IteratorAggregate
     private $connection;
 
     /**
-     * @var \shishao\LaramodelMeta\Schema[]
+     * @var \shishao\laramodelMeta\Schema[]
      */
     protected $schemas = [];
 
@@ -63,7 +63,7 @@ class SchemaManager implements IteratorAggregate
     /**
      * @param string $schema
      *
-     * @return \shishao\LaramodelMeta\Schema
+     * @return \shishao\laramodelMeta\Schema
      */
     public function make($schema)
     {
@@ -77,7 +77,7 @@ class SchemaManager implements IteratorAggregate
     /**
      * @param string $schema
      *
-     * @return \shishao\LaramodelMeta\Schema
+     * @return \shishao\laramodelMeta\Schema
      */
     protected function makeMapper($schema)
     {

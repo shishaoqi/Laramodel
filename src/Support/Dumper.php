@@ -5,7 +5,7 @@
  * Date: 11/09/16 05:18 PM.
  */
 
-namespace shishao\Laramodel\Support;
+namespace shishao\laramodel\Support;
 
 class Dumper
 {

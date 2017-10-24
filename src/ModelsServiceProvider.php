@@ -1,12 +1,12 @@
 <?php
 
-namespace shishao\Laramodel;
+namespace shishao\laramodel;
 
-use shishao\Laramodel\Support\Classify;
-use shishao\Laramodel\Model\Config;
+use shishao\laramodel\Support\Classify;
+use shishao\laramodel\Model\Config;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\ServiceProvider;
-use shishao\Laramodel\Model\ModelFactory;
+use shishao\laramodel\Model\ModelFactory;
 
 class ModelsServiceProvider extends ServiceProvider
 {

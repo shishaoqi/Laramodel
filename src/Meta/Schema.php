@@ -5,7 +5,7 @@
  * Date: 02/10/16 07:56 PM.
  */
 
-namespace shishao\Laramodel\Meta;
+namespace shishao\laramodel\Meta;
 
 /**
  * Created by Cristian.
@@ -24,7 +24,7 @@ interface Schema
     public function schema();
 
     /**
-     * @return \shishao\LaramodelMeta\Blueprint[]
+     * @return \shishao\laramodelMeta\Blueprint[]
      */
     public function tables();
 
@@ -38,12 +38,12 @@ interface Schema
     /**
      * @param string $table
      *
-     * @return \shishao\LaramodelMeta\Blueprint
+     * @return \shishao\laramodelMeta\Blueprint
      */
     public function table($table);
 
     /**
-     * @param \shishao\LaramodelMeta\Blueprint $table
+     * @param \shishao\laramodelMeta\Blueprint $table
      *
      * @return array
      */

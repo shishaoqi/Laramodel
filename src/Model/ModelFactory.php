@@ -5,13 +5,13 @@
  * Date: 19/09/16 11:58 PM.
  */
 
-namespace shishao\Laramodel\Model;
+namespace shishao\laramodel\Model;
 
 use Carbon\Carbon;
 use Illuminate\Support\Str;
-use shishao\LaramodelMeta\Blueprint;
-use shishao\LaramodelSupport\Classify;
-use shishao\LaramodelMeta\SchemaManager;
+use shishao\laramodelMeta\Blueprint;
+use shishao\laramodelSupport\Classify;
+use shishao\laramodelMeta\SchemaManager;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Database\DatabaseManager;
 
@@ -23,7 +23,7 @@ class ModelFactory
     private $db;
 
     /**
-     * @var \shishao\LaramodelMeta\SchemaManager
+     * @var \shishao\laramodelMeta\SchemaManager
      */
     protected $schemas;
 
@@ -33,22 +33,22 @@ class ModelFactory
     protected $files;
 
     /**
-     * @var \shishao\LaramodelSupport\Classify
+     * @var \shishao\laramodelSupport\Classify
      */
     protected $class;
 
     /**
-     * @var \shishao\Laramodel\Model\Config
+     * @var \shishao\laramodel\Model\Config
      */
     protected $config;
 
     /**
-     * @var \shishao\Laramodel\Model\ModelManager
+     * @var \shishao\laramodel\Model\ModelManager
      */
     protected $models;
 
     /**
-     * @var \shishao\Laramodel\Model\Mutator[]
+     * @var \shishao\laramodel\Model\Mutator[]
      */
     protected $mutators = [];
 
@@ -57,8 +57,8 @@ class ModelFactory
      *
      * @param \Illuminate\Database\DatabaseManager $db
      * @param \Illuminate\Filesystem\Filesystem $files
-     * @param \shishao\LaramodelSupport\Classify $writer
-     * @param \shishao\Laramodel\Model\Config $config
+     * @param \shishao\laramodelSupport\Classify $writer
+     * @param \shishao\laramodel\Model\Config $config
      */
     public function __construct(DatabaseManager $db, Filesystem $files, Classify $writer, Config $config)
     {
@@ -69,7 +69,7 @@ class ModelFactory
     }
 
     /**
-     * @return \shishao\Laramodel\Model\Mutator
+     * @return \shishao\laramodel\Model\Mutator
      */
     public function mutate()
     {
@@ -77,7 +77,7 @@ class ModelFactory
     }
 
     /**
-     * @return \shishao\Laramodel\Model\ModelManager
+     * @return \shishao\laramodel\Model\ModelManager
      */
     protected function models()
     {
@@ -121,7 +121,7 @@ class ModelFactory
     }
 
     /**
-     * @param \shishao\LaramodelMeta\Blueprint $blueprint
+     * @param \shishao\laramodelMeta\Blueprint $blueprint
      *
      * @return bool
      */
@@ -160,7 +160,7 @@ class ModelFactory
      *
      * @param bool $withRelations
      *
-     * @return \shishao\Laramodel\Model\Model
+     * @return \shishao\laramodel\Model\Model
      */
     public function makeModel($schema, $table, $withRelations = true)
     {
@@ -170,7 +170,7 @@ class ModelFactory
     /**
      * @param string $schema
      *
-     * @return \shishao\LaramodelMeta\Schema
+     * @return \shishao\laramodelMeta\Schema
      */
     public function makeSchema($schema)
     {
@@ -178,7 +178,7 @@ class ModelFactory
     }
 
     /**
-     * @param \shishao\Laramodel\Model\Model $model
+     * @param \shishao\laramodel\Model\Model $model
      * @todo: Delegate workload to SchemaManager and ModelManager
      *
      * @return array
@@ -204,7 +204,7 @@ class ModelFactory
     }
 
     /**
-     * @param \shishao\Laramodel\Model\Model $model
+     * @param \shishao\laramodel\Model\Model $model
      * @param string $name
      *
      * @return string
@@ -219,7 +219,7 @@ class ModelFactory
 
     /**
      * @param string $template
-     * @param \shishao\Laramodel\Model\Model $model
+     * @param \shishao\laramodel\Model\Model $model
      *
      * @return mixed
      */
@@ -236,7 +236,7 @@ class ModelFactory
     }
 
     /**
-     * @param \shishao\Laramodel\Model\Model $model
+     * @param \shishao\laramodel\Model\Model $model
      *
      * @return string
      */
@@ -266,7 +266,7 @@ class ModelFactory
     }
 
     /**
-     * @param \shishao\Laramodel\Model\Model $model
+     * @param \shishao\laramodel\Model\Model $model
      *
      * @return string
      */
@@ -365,7 +365,7 @@ class ModelFactory
     }
 
     /**
-     * @param \shishao\Laramodel\Model\Model $model
+     * @param \shishao\laramodel\Model\Model $model
      *
      * @param array $custom
      *
@@ -393,7 +393,7 @@ class ModelFactory
     }
 
     /**
-     * @param \shishao\Laramodel\Model\Model $model
+     * @param \shishao\laramodel\Model\Model $model
      *
      * @return bool
      */
@@ -403,7 +403,7 @@ class ModelFactory
     }
 
     /**
-     * @param \shishao\Laramodel\Model\Model $model
+     * @param \shishao\laramodel\Model\Model $model
      */
     protected function createUserFile(Model $model)
     {
@@ -419,7 +419,7 @@ class ModelFactory
     }
 
     /**
-     * @param \shishao\Laramodel\Model\Model $model
+     * @param \shishao\laramodel\Model\Model $model
      *
      * @return string
      */
@@ -442,11 +442,11 @@ class ModelFactory
     }
 
     /**
-     * @param \shishao\LaramodelMeta\Blueprint|null $blueprint
+     * @param \shishao\laramodelMeta\Blueprint|null $blueprint
      * @param string $key
      * @param mixed $default
      *
-     * @return mixed|\shishao\Laramodel\Model\Config
+     * @return mixed|\shishao\laramodel\Model\Config
      */
     public function config(Blueprint $blueprint = null, $key = null, $default = null)
     {
