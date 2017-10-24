@@ -14,19 +14,19 @@ use Illuminate\Support\Arr;
 class ModelManager implements IteratorAggregate
 {
     /**
-     * @var \Reliese\Coders\Model\ModelFactory
+     * @var \shishao\laramodel\Model\ModelFactory
      */
     protected $factory;
 
     /**
-     * @var \Reliese\Coders\Model\Model[]
+     * @var \shishao\laramodel\Model\Model[]
      */
     protected $models = [];
 
     /**
      * ModelManager constructor.
      *
-     * @param \Reliese\Coders\Model\ModelFactory $factory
+     * @param \shishao\laramodel\Model\ModelFactory $factory
      */
     public function __construct(ModelFactory $factory)
     {
@@ -36,10 +36,10 @@ class ModelManager implements IteratorAggregate
     /**
      * @param string $schema
      * @param string $table
-     * @param \Reliese\Coders\Model\Mutator[] $mutators
+     * @param \shishao\laramodel\Model\Mutator[] $mutators
      * @param bool $withRelations
      *
-     * @return \Reliese\Coders\Model\Model
+     * @return \shishao\laramodel\Model\Model
      */
     public function make($schema, $table, $mutators = [], $withRelations = true)
     {
