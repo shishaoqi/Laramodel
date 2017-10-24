@@ -36,7 +36,7 @@ class Config
      */
     public function get(Blueprint $blueprint, $key, $default = null)
     {
-        $default = Arr::get($this->config, "*.$key", $default);
+        $default = Arr::get($this->config, "monitor.$key", $default);
         $schema = Arr::get($this->config, "{$blueprint->schema()}.$key", $default);
         $specific = Arr::get($this->config, "{$blueprint->qualifiedTable()}.$key", $schema);
 
