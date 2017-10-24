@@ -5,13 +5,13 @@
  * Date: 18/09/16 08:36 PM.
  */
 
-namespace Shishao\Laramodel\Meta\MySql;
+namespace shishao\Laramodel\Meta\MySql;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Illuminate\Support\Fluent;
 
-class Column implements \Shishao\Laramodel\Meta\Column
+class Column implements \shishao\Laramodel\Meta\Column
 {
     /**
      * @var array

@@ -5,7 +5,7 @@
  * Date: 18/09/16 08:19 PM.
  */
 
-namespace Shishao\Laramodel\Meta;
+namespace shishao\Laramodel\Meta;
 
 use Illuminate\Support\Fluent;
 
@@ -235,7 +235,7 @@ class Blueprint
     }
 
     /**
-     * @param \Shishao\LaramodelMeta\Blueprint $table
+     * @param \shishao\LaramodelMeta\Blueprint $table
      *
      * @return array
      */

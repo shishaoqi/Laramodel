@@ -1,5 +1,5 @@
 {
-    "name": "Shishao/Laramodel",
+    "name": "shishao/Laramodel",
     "description": "laravel框架中，用于创建mdel的扩展包,简单、轻量级",
     "license": "MIT",
     "authors": [
@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Shishao\\": "src/"
+            "shishao\\": "src/"
         }
     }
 }

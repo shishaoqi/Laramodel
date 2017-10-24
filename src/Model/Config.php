@@ -5,10 +5,10 @@
  * Date: 11/09/16 09:00 PM.
  */
 
-namespace Shishao\Laramodel\Model;
+namespace shishao\Laramodel\Model;
 
 use Illuminate\Support\Arr;
-use Shishao\LaramodelMeta\Blueprint;
+use shishao\LaramodelMeta\Blueprint;
 
 class Config
 {
@@ -28,7 +28,7 @@ class Config
     }
 
     /**
-     * @param \Shishao\LaramodelMeta\Blueprint $blueprint
+     * @param \shishao\LaramodelMeta\Blueprint $blueprint
      * @param string $key
      * @param mixed $default
      *

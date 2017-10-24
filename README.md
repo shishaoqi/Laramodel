@@ -31,7 +31,7 @@ Add the service provider to your `config/app.php` file within the `providers` ke
      * Package Service Providers...
      */
 
-    Shishao\Laramodel\CodersServiceProvider::class,
+    shishao\Laramodel\CodersServiceProvider::class,
 ],
 // ...
 ```
@@ -49,7 +49,7 @@ Then you'll need to register the provider in `app/Providers/AppServiceProvider.p
 public function register()
 {
     if ($this->app->environment() == 'local') {
-        $this->app->register(\Shishao\Laramodel\CodersServiceProvider::class);
+        $this->app->register(\shishao\Laramodel\CodersServiceProvider::class);
     }
 }
 ```
