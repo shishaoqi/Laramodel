@@ -14,7 +14,7 @@ use Illuminate\Support\Arr;
 class ModelManager implements IteratorAggregate
 {
     /**
-     * @var \Reliese\Coders\Model\Factory
+     * @var \Reliese\Coders\Model\ModelFactory
      */
     protected $factory;
 
@@ -26,9 +26,9 @@ class ModelManager implements IteratorAggregate
     /**
      * ModelManager constructor.
      *
-     * @param \Reliese\Coders\Model\Factory $factory
+     * @param \Reliese\Coders\Model\ModelFactory $factory
      */
-    public function __construct(Factory $factory)
+    public function __construct(ModelFactory $factory)
     {
         $this->factory = $factory;
     }
