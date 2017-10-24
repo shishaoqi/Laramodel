@@ -1,5 +1,4 @@
-y<?php
-
+<?php
 namespace shishao\laramodel\Meta\MySql;
 
 use Illuminate\Support\Arr;
